@@ -1,0 +1,29 @@
+{
+  "name": "ai-test-generator",
+  "displayName": "AI Test Generator",
+  "description": "Generate Jest test cases using AI",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onCommand:ai-test-generator.generateTests"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-test-generator.generateTests",
+        "title": "Generate Jest Tests"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "ai-test-generator.generateTests",
+          "group": "navigation"
+        }
+      ]
+    }
+  }
+}
